@@ -1,4 +1,4 @@
 
 echo "-------------author: ${AUTHOR}---------------"
 
-nginx -g "daemon off;"
+/usr/sbin/nginx -g "daemon off;"
