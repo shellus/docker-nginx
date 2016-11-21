@@ -4,6 +4,8 @@ ENV AUTHOR shellus
 
 VOLUME ["/etc/nginx","/var/www/html"]
 
-COPY run.sh /run.sh
+ADD run.sh /run.sh
+
+RUN chmod +x /run.sh
 
 ENTRYPOINT ["/run.sh"]
